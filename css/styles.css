@@ -1,0 +1,422 @@
+:root {
+    --color-dark: #000000;
+    --color-unimatefinn: #2F5F9E;
+    --color-white: #FCF7F7 --transition: .5s;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-family: "Arvo", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+img {
+    object-fit: cover;
+    object-position: center center;
+}
+
+a:hover {
+    color: var(--color-unimatefinn);
+    font-weight: bold;
+}
+
+.header-page {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.header-page img {
+    max-width: 80px;
+}
+
+.header-page h1 {
+    transition: var(--transition);
+}
+
+.header-page h1,
+img {
+    margin: 2rem;
+}
+
+.header-page h1:hover {
+    transition: var(--transition);
+    color: var(--color-unimatefinn);
+}
+
+.menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 1.5rem 0 0;
+}
+
+.menu ol {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home {
+    padding: 4rem;
+    max-height: 100vh;
+    background-color: var(--color-blue-home);
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background-color: var(--color-unimatefinn);
+}
+
+.imagem-principal {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+.imagem-principal img {
+    width: 60%;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.home h2 {
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.diferenciais {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    min-height: 30vh;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titulo-d {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    margin-right: 2.8rem;
+}
+
+
+.imagem-logo {
+    width: 50%;
+
+}
+
+.imagem-logo img {
+    margin: auto;
+}
+
+.diferenciais div {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+}
+
+
+.conteudo-diferenciais {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    font-size: 1.6rem;
+}
+
+
+
+
+.conteudo p,
+h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+.conteudo p {
+    font-size: 1.6rem;
+}
+
+.integrantes {
+    max-width: 1500px;
+    margin: auto;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: var(--color-white);
+    padding: 15px 15px 40px 15px;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    scale: 1.1;
+    transition: var(--transition);
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--color-unimatefinn);
+}
+
+.image-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.diferenciais h2 {
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.robo {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-unimatefinn);
+}
+
+.robo p {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+    width: 80%;
+}
+
+.robo img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.robo h2 {
+    font-size: 4rem;
+}
+
+.socio {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--color-unimatefinn);
+}
+
+.socio h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.conteudo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: auto;
+    width: 90%;
+}
+
+.slides {
+    width: 90%;
+    margin: auto;
+    min-height: 50vh;
+}
+
+.slides a {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    padding: auto;
+    margin: auto;
+    background-color: var(--color-unimatefinn);
+    transition: var(--transition);
+}
+
+.slides img {
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+        0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.apresentacao {
+    width: 90%;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.apresentacao p {
+    text-align: left;
+}
+
+.chats {
+    min-height: 40vh;
+}
+
+.articles,
+.feedback {
+    min-height: 20vh;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.articles h2 {
+    font-weight: 800;
+}
+
+.feedback h2 {
+    font-weight: 800;
+}
+
+.articles li {
+    padding: 5px;
+}
+
+.articles p {
+    font-size: 1.6rem;
+}
+
+.articles ul li a {
+    font-size: 1.5rem;
+}
+
+.articles a {
+    background-color: var(--color-unimatefinn);
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-unimatefinn);
+}
+
+.feedback button {
+    transition: var(--transition);
+    border-radius: 10px;
+}
+
+.feedback button:hover {
+    transition: var(--transition);
+}
+
+/* Responsivo */
+@media(max-width:1100px) {
+    .header-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .header-page h1,
+    img {
+        margin: 0;
+    }
+
+    .menu {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:750px) {
+    .home {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:565px) {
+    .diferenciais div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .conteudo-diferenciais {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .imagem-logo {
+        width: 100%;
+    }
+}
