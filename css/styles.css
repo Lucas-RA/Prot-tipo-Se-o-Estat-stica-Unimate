@@ -70,17 +70,64 @@ img {
     align-items: flex-end;
     justify-content: flex-end;
     margin: 0 1.5rem 0 0;
+    flex-wrap: wrap;
+    /* Permite que o conteúdo quebre em múltiplas linhas */
 }
 
+/* Define o comportamento do menu em telas menores */
 .menu ol {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    /* Quebra os itens em mais linhas se necessário */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .menu {
+        justify-content: center;
+        /* Centraliza o menu em telas menores */
+    }
+
+    .menu ol {
+        gap: 0.8rem;
+        /* Reduz o espaçamento entre os itens */
+    }
+
+    .menu ol li {
+        font-size: 0.9rem;
+        /* Diminui o tamanho do texto */
+    }
+}
+
+/* Media Query para telas muito pequenas */
+@media (max-width: 480px) {
+    .menu {
+        width: 100%;
+        /* O menu ocupa toda a largura da tela */
+        margin: 0;
+        /* Remove as margens laterais */
+    }
+
+    .menu ol {
+        flex-direction: column;
+        /* Coloca os itens em coluna */
+        align-items: center;
+        /* Centraliza os itens */
+        gap: 0.6rem;
+        /* Reduz o espaçamento ainda mais */
+    }
+
+    .menu ol li {
+        font-size: 0.8rem;
+        /* Reduz o tamanho do texto para telas pequenas */
+    }
 }
 
 .home {
     padding: 4rem;
-    
-   
+
+
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -88,7 +135,7 @@ img {
 }
 
 .imagem-principal {
-   
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +213,7 @@ h2 {
 
 .conteudo p {
     font-size: 1.6rem;
-   
+
 }
 
 .integrantes {
@@ -420,6 +467,271 @@ button:hover {
     }
 
     .imagem-logo {
+        width: 100%;
+    }
+}
+
+/* parte 4 */
+
+/* Estilos para a seção de Accordions */
+.accordions-section {
+    padding: 4rem;
+    background-color: #f9f9f9;
+}
+
+.accordions-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-unimatefinn);
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.accordion-item {
+    background-color: var(--color-unimatefinn);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.accordion-item:hover {
+    transform: translateY(-5px);
+}
+
+.accordion-button {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    padding: 1.2rem;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.accordion-button:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.accordion-images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.accordion-images img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.accordion-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Envio de Ideias */
+.ideas-input {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.ideas-input label {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: #333;
+}
+
+.ideas-input input {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+.ideas-input p {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+/* Seção "Brincar e Jogar" */
+.play-section {
+    padding: 4rem;
+    background-color: var(--color-unimatefinn);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.play-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.play-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.play-content iframe {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.play-content p {
+    font-size: 1.6rem;
+    width: 80%;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Seção "Top 3 Ideias de Aplicações" */
+.ideas-section {
+    margin-top: 4rem;
+}
+
+.ideas-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.top-ideas {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.idea-card {
+    background-color: #0a4593;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    width: 300px;
+}
+
+.idea-card h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.idea-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+/* Seção Comunidade */
+.community-section {
+    padding: 4rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.community-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #0056b3;
+}
+
+.community-section p {
+    font-size: 1.7rem;
+    margin-bottom: 1.8rem;
+}
+
+.community-feedback {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feedback-card {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+}
+
+.feedback-card p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .play-content {
+        flex-direction: column;
+    }
+
+    .play-content video,
+    .play-content p {
+        width: 100%;
+    }
+
+    .accordion-images img {
+        width: 100%;
+    }
+
+    .community-feedback {
+        flex-direction: column;
+    }
+
+    .feedback-card {
         width: 100%;
     }
 }
