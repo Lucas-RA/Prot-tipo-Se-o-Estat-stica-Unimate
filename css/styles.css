@@ -470,9 +470,6 @@ button:hover {
     }
 }
 
-/* parte 4 */
-
-
 .accordions-section {
     padding: 4rem;
     background-color: #f9f9f9;
@@ -544,6 +541,23 @@ button:hover {
 
 .accordion-images img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .accordion-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion-images img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .accordion-images img {
+        width: 100%;
+    }
 }
 
 
