@@ -9,8 +9,6 @@ document.querySelectorAll('.accordion-button').forEach(button => {
         } else {
             accordionContent.style.display = 'none';
         }
-
-        // Fechar outros accordions quando um é aberto
         document.querySelectorAll('.accordion-content').forEach(content => {
             if (content !== accordionContent) {
                 content.style.display = 'none';

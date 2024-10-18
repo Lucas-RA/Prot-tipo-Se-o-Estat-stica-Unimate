@@ -71,56 +71,55 @@ img {
     justify-content: flex-end;
     margin: 0 1.5rem 0 0;
     flex-wrap: wrap;
-    /* Permite que o conteúdo quebre em múltiplas linhas */
 }
 
-/* Define o comportamento do menu em telas menores */
+
 .menu ol {
     display: flex;
     gap: 1.4rem;
     flex-wrap: wrap;
-    /* Quebra os itens em mais linhas se necessário */
+
 }
 
-/* Media Query para telas menores */
+
 @media (max-width: 768px) {
     .menu {
         justify-content: center;
-        /* Centraliza o menu em telas menores */
+
     }
 
     .menu ol {
         gap: 0.8rem;
-        /* Reduz o espaçamento entre os itens */
+
     }
 
     .menu ol li {
         font-size: 0.9rem;
-        /* Diminui o tamanho do texto */
+
     }
 }
 
-/* Media Query para telas muito pequenas */
+
 @media (max-width: 480px) {
     .menu {
         width: 100%;
-        /* O menu ocupa toda a largura da tela */
+
         margin: 0;
-        /* Remove as margens laterais */
+
     }
 
     .menu ol {
         flex-direction: column;
-        /* Coloca os itens em coluna */
+
         align-items: center;
-        /* Centraliza os itens */
+
         gap: 0.6rem;
-        /* Reduz o espaçamento ainda mais */
+
     }
 
     .menu ol li {
         font-size: 0.8rem;
-        /* Reduz o tamanho do texto para telas pequenas */
+
     }
 }
 
@@ -422,7 +421,7 @@ button:hover {
     transition: var(--transition);
 }
 
-/* Responsivo */
+
 @media(max-width:1100px) {
     .header-page {
         display: flex;
@@ -473,7 +472,7 @@ button:hover {
 
 /* parte 4 */
 
-/* Estilos para a seção de Accordions */
+
 .accordions-section {
     padding: 4rem;
     background-color: #f9f9f9;
@@ -547,7 +546,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Seção de Envio de Ideias */
+
 .ideas-input {
     margin-top: 3rem;
     text-align: center;
@@ -575,7 +574,7 @@ button:hover {
     color: #555;
 }
 
-/* Seção "Brincar e Jogar" */
+
 .play-section {
     padding: 4rem;
     background-color: var(--color-unimatefinn);
@@ -613,7 +612,7 @@ button:hover {
     max-width: 700px;
 }
 
-/* Seção "Top 3 Ideias de Aplicações" */
+
 .ideas-section {
     margin-top: 4rem;
 }
@@ -663,7 +662,7 @@ button:hover {
 
 }
 
-/* Seção Comunidade */
+
 .community-section {
     padding: 4rem;
     background-color: #f9f9f9;
@@ -712,7 +711,7 @@ button:hover {
     font-weight: 500;
 }
 
-/* Responsividade */
+
 @media (max-width: 900px) {
     .play-content {
         flex-direction: column;
